@@ -1,0 +1,2 @@
+CortexM3_Core_SCB.c:11:6:SCB_setGroupPriority	1
+CortexM3_Core_SCB.c:22:10:SCB_getGroupPriority	1

@@ -1,0 +1,7 @@
+CortexM3_Core_NVIC.c:11:6:NVIC_setEnableIQRn	4
+CortexM3_Core_NVIC.c:35:6:NVIC_setDisableIQRn	4
+CortexM3_Core_NVIC.c:59:6:NVIC_setPendingIQRn	4
+CortexM3_Core_NVIC.c:83:6:NVIC_clearPendingIQRn	4
+CortexM3_Core_NVIC.c:107:10:NVIC_getActiveIQRn	5
+CortexM3_Core_NVIC.c:141:6:NVIC_setPriorityIQRn	2
+CortexM3_Core_NVIC.c:153:10:NVIC_getPriorityIQRn	2
