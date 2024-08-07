@@ -23,6 +23,7 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Src/CortexM3_Core \
+Src/CortexM3_Core/HALL/RCC \
 Src \
 Startup \
 

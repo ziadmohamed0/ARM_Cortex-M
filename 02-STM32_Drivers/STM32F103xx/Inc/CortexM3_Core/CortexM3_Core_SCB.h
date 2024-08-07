@@ -10,10 +10,11 @@
 #define CORTEXM3_CORE_CORTEXM3_CORE_SCB_H_
 
 /* ------------------------------ Include Start ---------------------------- */
-#include "../STM32F103xx/STM32F103xx_Vec.h"
+#include "HALL/RCC/STM32F103xx_RCC.h"
 /* ------------------------------ Include END ------------------------------ */
 
 /* ------------------------------ Macro Start ---------------------------- */
+	/* *@groupMacros : SCB . */
 #define SCB_Base (0xE000ED00)
 #define SCB		((SCB_t *)SCB_Base)
 
@@ -24,35 +25,12 @@
 
 #define SCB_GROUP_PRIORTY_POS	8U
 #define SCB_GROUP_PRIORTY_MSK	(7UL << SCB_GROUP_PRIORTY_POS)
-
 /* ------------------------------ Macro END ------------------------------ */
 
 /* ------------------- Macro Functions Declarations Start ----------------- */
 /* ------------------- Macro Functions Declarations END ------------------- */
 
 /* ---------------------- Data Types Declarations Start -------------------- */
-typedef struct
-{
-	volatile uint32_t CPUID;
-	volatile uint32_t ICSR;
-	volatile uint32_t VTOR;
-	volatile uint32_t AIRCR;
-	volatile uint32_t SCR;
-	volatile uint32_t CCR;
-	volatile uint32_t SHPR1;
-	volatile uint32_t SHPR2;
-	volatile uint32_t SHPR3;
-	volatile uint32_t SHCRS;
-	volatile uint32_t CFSR;
-	volatile uint32_t MMSR;
-	volatile uint32_t BFSR;
-	volatile uint32_t UFSR;
-	volatile uint32_t HFSR;
-	volatile uint32_t MMAR;
-	volatile uint32_t BFAR;
-	volatile uint32_t AFSR;
-}SCB_t;
-
 typedef enum
 {
 	SCB_GROUPPRIORITIES_0 = 0x00000007U,

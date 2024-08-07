@@ -12,12 +12,12 @@
 /* ========== INCLUDES ========== */
 #include "Bit_Math.h"
 /* ========== CPU_TUPES ========== */
-#define CPU_8_BIT   8
-#define CPU_16_BIT  16
-#define CPU_32_BIT  32
-#define CPU_64_BIT  64
+#define CPU_8_BIT   		8
+#define CPU_16_BIT  		16
+#define CPU_32_BIT  		32
+#define CPU_64_BIT  		64
 
-#define CPU_type    CPU_32_BIT
+#define CPU_type    		CPU_32_BIT
 
 /* ========== Conditions ==========*/
 #if     (CPU_type == CPU_64_BIT)
@@ -71,5 +71,6 @@ typedef float               float32_t;
 
 #endif
 
+#define NULL 				0
 
 #endif /* COMMON_STD_TYPES_H_ */
