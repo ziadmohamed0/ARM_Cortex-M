@@ -8,17 +8,24 @@
 
 #include "CortexM3_Core/CortexM3_interfacing.h"
 
+uint32_t Var1 = 0;
+uint32_t volatile Var2 = 0;
+uint32_t volatile Var3 = 0;
 
-uint8_t var1 = 0;
-uint8_t var2 = 0;
+void SystickFunc1(void){
+	Var2++;
+}
 
-
+void SystickFunc2(void){
+	Var3++;
+}
 int main(void)
 {
 	SCB_setGroupPriority(SCB_GROUPPRIORITIES_2);
+	Var1 = Systick_init(1000000);
+	Systick_singleInterval(1000000, SystickFunc1);
+	Systick_periodicInterval(1000000, SystickFunc2);
 
-	var1 = RCC_oscConfig(&OSC_HSE);
-	var2 = RCC_sysCLKConfig(&SYSCLK);
 	while(1)
 	{
 

@@ -11,5 +11,6 @@
 
 #include "CortexM3_Core_NVIC.h"
 #include "CortexM3_Core_SCB.h"
+#include "CortexM3_Core_Systick.h"
 
 #endif /* CORTEXM3_CORE_CORTEXM3_INTERFACING_H_ */

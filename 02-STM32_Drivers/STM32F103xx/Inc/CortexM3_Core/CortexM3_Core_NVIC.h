@@ -14,12 +14,12 @@
 /* ------------------------------ Include END ------------------------------ */
 
 /* ------------------------------ Macro Start ---------------------------- */
-#define NVIC_ISER_Base (0xE000E100)
-#define NVIC_ICER_Base (0XE000E180)
-#define NVIC_ISPR_Base (0XE000E200)
-#define NVIC_ICPR_Base (0XE000E280)
-#define NVIC_IABR_Base (0xE000E300)
-#define NVIC_IPR_Base  (0xE000E400)
+#define NVIC_ISER_Base (0xE000E100UL)
+#define NVIC_ICER_Base (0XE000E180UL)
+#define NVIC_ISPR_Base (0XE000E200UL)
+#define NVIC_ICPR_Base (0XE000E280UL)
+#define NVIC_IABR_Base (0xE000E300UL)
+#define NVIC_IPR_Base  (0xE000E400UL)
 
 #define NVIC_ISER ((ISER_t *)NVIC_ISER_Base)
 #define NVIC_ICER ((ICER_t *)NVIC_ICER_Base)

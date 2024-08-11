@@ -24,6 +24,8 @@ Return_t RCC_oscConfig(OSCILLATOR_t *copyOscConfig)
 					switch (copyOscConfig->HSE_STAT)
 					{
 						case RCC_HSE_ON:
+								CLR_BIT(RCC->RCC_CFGR,SCFGR_SW1_MSK);
+								SET_BIT(RCC->RCC_CFGR,SCFGR_SW0_MSK);
 								SET_BIT(RCC->RCC_CR,HSEON);
 							break;
 						case RCC_HSE_OFF:

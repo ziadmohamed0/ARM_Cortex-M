@@ -15,7 +15,7 @@
 
 /* ------------------------------ Macro Start ---------------------------- */
 	/* *@groupMacros : SCB . */
-#define SCB_Base (0xE000ED00)
+#define SCB_Base (0xE000ED00UL)
 #define SCB		((SCB_t *)SCB_Base)
 
 #define VECTKEY_STATUSE	0x05FA

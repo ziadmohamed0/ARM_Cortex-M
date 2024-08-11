@@ -72,5 +72,6 @@ typedef float               float32_t;
 #endif
 
 #define NULL 				0
+typedef void (* ptrFunction)(void);
 
 #endif /* COMMON_STD_TYPES_H_ */

@@ -21,7 +21,13 @@
 #define RCC_Base							(0x40021000UL)
 #define RCC 								((RCC_t *) RCC_Base)
 
-	/* *** APB high-speed (APB2) *** */
+	/* *@groupMacros : SW . */
+#define	SCFGR_SW0_POS						(0U)
+#define	SCFGR_SW0_MSK						(0x1UL << SCFGR_SW0_POS)
+#define	SCFGR_SW1_POS						(1U)
+#define	SCFGR_SW1_MSK						(0x1UL << SCFGR_SW1_POS)
+
+	/* *** *@groupMacros :	APB high-speed (APB2) *** */
 #define RCC_CFGRAPB2_PPRE2_POS				(11U)
 #define RCC_CFGRAPB2_PPRE2_MSK				(0x7UL << RCC_APB2_POS)
 
@@ -31,7 +37,7 @@
 #define RCC_CFGRAPB2_PPRE2_8				0x6U
 #define RCC_CFGRAPB2_PPRE2_16				0x7U
 
-	/* *** APB low-speed (APB1) *** */
+	/* *** *@groupMacros :	APB low-speed (APB1) *** */
 #define RCC_CFGRAPB2_PPRE1_POS				(8U)
 #define RCC_CFGRAPB2_PPRE1_MSK				(0x7UL << RCC_APB2_POS)
 
@@ -41,7 +47,7 @@
 #define RCC_CFGRAPB2_PPRE1_8				0x6U
 #define RCC_CFGRAPB2_PPRE1_16				0x7U
 
-	/* *** AHB *** */
+	/* *** *@groupMacros :	AHB *** */
 #define RCC_CFGRAPB2_HPRE_POS				(4U)
 #define RCC_CFGRAPB2_HPRE_MSK				(0xFUL << RCC_APB2_POS)
 
@@ -55,13 +61,13 @@
 #define RCC_CFGRAPB2_HPRE_256				0xEU
 #define RCC_CFGRAPB2_HPRE_512				0xFU
 
-	/* ***** enable HSE OSC Bit ***** */
+	/* ***** *@groupMacros :	enable HSE OSC Bit ***** */
 #define HSEON								16U
 #define HSION								0U
 #define LSEON								0U
 #define LSION								0U
 
-	/* ***** Number Of Bits In RCC_APB2ENR ***** */
+	/* ***** *@groupMacros :	Number Of Bits In RCC_APB2ENR ***** */
 #define IOPAEN								2U	// GPIOA
 #define IOPBEN								3U	// GPIOB
 #define IOPCEN								4U	// GPIOC
