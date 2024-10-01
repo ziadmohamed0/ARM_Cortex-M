@@ -1,0 +1,13 @@
+/*
+ * NVIC_cfg.h
+ *
+ *  Created on: Sep 30, 2024
+ *      Author: ziad
+ */
+
+#ifndef 03_MCAL_CORE_CORTEXM3_NVIC_CFG_H_
+#define 03_MCAL_CORE_CORTEXM3_NVIC_CFG_H_
+
+
+
+#endif /* 03_MCAL_CORE_CORTEXM3_NVIC_CFG_H_ */

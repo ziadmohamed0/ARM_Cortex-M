@@ -8,10 +8,12 @@
  ******************************************************************************
  */
 
-#include "03_Mcal/RCC/RCC_init.h"
+#include "03_Mcal/STM32F103/RCC/RCC_init.h"
 
 int main(void) {
-    while(1) {
-//    	MRCC_vClockEnable(AHB, 1);
-    }
+
+
+	while(1) {
+
+	}
 }

@@ -23,7 +23,9 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Src/01_App \
-Src/03_Mcal/RCC \
+Src/03_Mcal/Core_CortexM3/NVIC \
+Src/03_Mcal/Core_CortexM3/SCB \
+Src/03_Mcal/STM32F103/RCC \
 Src \
 Startup \
 

@@ -1,5 +1,7 @@
 "./Src/01_App/main.o"
-"./Src/03_Mcal/RCC/RCC_prog.o"
+"./Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.o"
+"./Src/03_Mcal/Core_CortexM3/SCB/SCB_prog.o"
+"./Src/03_Mcal/STM32F103/RCC/RCC_prog.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"
 "./Startup/startup_stm32f103c8tx.o"

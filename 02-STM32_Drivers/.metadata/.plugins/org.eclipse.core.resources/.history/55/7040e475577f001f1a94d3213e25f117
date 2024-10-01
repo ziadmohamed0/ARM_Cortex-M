@@ -1,0 +1,18 @@
+/**
+--------------------------------------------------------
+--------------------------------------------------------
+ * @name    : NVIC_init.h
+ * @author  : Ziad Mohammed Fathy.
+ * @date    : Sep.29.2024
+ * @version :   _v1_
+ * @brief   :
+--------------------------------------------------------
+--------------------------------------------------------
+ */
+
+#ifndef _MCAL_CORE_CORTEXM3_NVIC_INIT_H_
+#define _MCAL_CORE_CORTEXM3_NVIC_INIT_H_
+
+
+
+#endif /* 03_MCAL_CORE_CORTEXM3_NVIC_INIT_H_ */

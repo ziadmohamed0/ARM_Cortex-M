@@ -1,0 +1,84 @@
+
+/**
+--------------------------------------------------------
+--------------------------------------------------------
+ * @name    : RCC_init.h
+ * @author  : Ziad Mohammed Fathy.
+ * @date    : Sep.29.2024
+ * @version :   _v1_
+ * @brief   :
+--------------------------------------------------------
+--------------------------------------------------------
+ */
+
+#ifndef _MCAL_RCC_RCC_INIT_H_
+#define _MCAL_RCC_RCC_INIT_H_
+
+/* -------------------- Include Start -------------------- */
+#include "RCC_cfg.h"
+/* -------------------- Include END -------------------- */
+
+/* -------------------- Macro Start -------------------- */
+/* -------------------- Macro END -------------------- */
+
+/* -------------------- Macro Functions Start -------------------- */
+	/* ***** Enable CLK GPIO Pins (GPIO-A ~ GPIO-E) ***** */
+#define RCC_GPIOA_CLK_enable(void)		(SET_BIT(RCC_APB2ENR,_CLK_EN_IOPA))
+#define RCC_GPIOB_CLK_enable(void)		(SET_BIT(RCC_APB2ENR,_CLK_EN_IOPB))
+#define RCC_GPIOC_CLK_enable(void)		(SET_BIT(RCC_APB2ENR,_CLK_EN_IOPC))
+#define RCC_GPIOD_CLK_enable(void)		(SET_BIT(RCC_APB2ENR,_CLK_EN_IOPD))
+#define RCC_GPIOE_CLK_enable(void)		(SET_BIT(RCC_APB2ENR,_CLK_EN_IOPE))
+
+	/* ***** Disable CLK GPIO Pins (GPIO-A ~ GPIO-E) ***** */
+#define RCC_GPIOA_CLK_disable(void)		(CLR_BIT(RCC->RCC_APB2ENR,IOPAEN))
+#define RCC_GPIOB_CLK_disable(void)		(CLR_BIT(RCC->RCC_APB2ENR,IOPBEN))
+#define RCC_GPIOC_CLK_disable(void)		(CLR_BIT(RCC->RCC_APB2ENR,IOPCEN))
+#define RCC_GPIOD_CLK_disable(void)		(CLR_BIT(RCC->RCC_APB2ENR,IOPDEN))
+#define RCC_GPIOE_CLK_disable(void)		(CLR_BIT(RCC->RCC_APB2ENR,IOPEEN))
+/* -------------------- Macro Functions END -------------------- */
+
+/* -------------------- Data Types Start -------------------- */
+typedef enum{
+    AHB = 0,
+    APB2,
+    APB1
+}BUS_t;
+/* -------------------- Data Types END -------------------- */
+
+/* -------------------- Software interface Start -------------------- */
+
+/**
+ * @brief  	: 	Enable clock of peripheral in STM32f103xx.
+ * @param1	:	Copy_busName -> which bus to connected with peripheral.
+ * @param2	:	copy_u8PrefNum -> Number of peripheral in bus Enable clock.
+ * @retVal	:	void.
+ */
+void MRCC_vClockEnable(BUS_t Copy_busName, uint8_t copy_u8PrefNum);
+
+/**
+ * @brief  	: 	Disable clock of peripheral in STM32f103xx.
+ * @param1	:	Copy_busName -> which bus to connected with peripheral.
+ * @param2	:	copy_u8PrefNum -> Number of peripheral in bus disable clock.
+ * @retVal	:	void.
+ */
+void MRCC_vClockDisable(BUS_t Copy_busName, uint8_t copy_u8PrefNum);
+
+/* -------------------- Software interface END -------------------- */
+
+
+#endif /* 03_MCAL_RCC_RCC_INIT_H_ */
+
+/*
+--------------------------------------------------------------
+--------------------------------------------------------------
+*   $   Revision   $
+
+    Data                By                  Ticket No.
+    --------------      --------------      --------------
+    Sep.29.2024         Ziad Mohammed       Ticket 1.
+    --------------      --------------      --------------
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+*/
+

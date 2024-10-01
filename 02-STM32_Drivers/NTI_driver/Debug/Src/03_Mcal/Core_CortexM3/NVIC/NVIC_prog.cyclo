@@ -1,0 +1,7 @@
+NVIC_prog.c:19:6:MNVIC_vEnableIRQ	5
+NVIC_prog.c:36:6:MNVIC_vDisableIRQ	5
+NVIC_prog.c:53:6:MNVIC_vSetPendingIRQ	5
+NVIC_prog.c:70:6:MNVIC_vClearPendingIRQ	5
+NVIC_prog.c:87:10:MNVIC_u32GetPendingIRQ	5
+NVIC_prog.c:107:6:MNVIC_vSetPriority	1
+NVIC_prog.c:116:10:MNVIC_u32GetPriority	1

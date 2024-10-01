@@ -1,0 +1,56 @@
+/**
+--------------------------------------------------------
+--------------------------------------------------------
+ * @name    : NVIC_init.h
+ * @author  : Ziad Mohammed Fathy.
+ * @date    : Sep.29.2024
+ * @version :   _v1_
+ * @brief   :
+--------------------------------------------------------
+--------------------------------------------------------
+ */
+
+#ifndef _MCAL_CORE_CORTEXM3_NVIC_INIT_H_
+#define _MCAL_CORE_CORTEXM3_NVIC_INIT_H_
+
+/* -------------------- Include Start -------------------- */
+#include "NVIC_cfg.h"
+/* -------------------- Include END -------------------- */
+
+/* -------------------- Macro Start -------------------- */
+/* -------------------- Macro END -------------------- */
+
+/* -------------------- Macro Functions Start -------------------- */
+/* -------------------- Macro Functions END -------------------- */
+
+/* -------------------- Data Types Start -------------------- */
+/* -------------------- Data Types END -------------------- */
+
+/* -------------------- Software interface Start -------------------- */
+void NVIC_vEnableIRQ(IQRn_t copyIRQn);
+void NVIC_vDisableIRQ(IQRn_t copyIRQn);
+void NVIC_vSetPendingIRQ(IRQn_t copyIRQn);
+void NVIC_vClearPendingIRQ(IRQn_t copyIRQn);
+uint32_t NVIC_u32GetPendingIRQ(IRQn_t copyIRQn);
+
+void NVIC_vSetPriority(IRQn_t copyIRQn, uint32_t copyPriority);
+uint32_t NVIC_u32GetPriority(IRQn_t copyIRQn);
+
+/* -------------------- Software interface END -------------------- */
+
+#endif /* 03_MCAL_CORE_CORTEXM3_NVIC_INIT_H_ */
+
+/*
+--------------------------------------------------------------
+--------------------------------------------------------------
+*   $   Revision   $
+
+    Data                By                  Ticket No.
+    --------------      --------------      --------------
+    Sep.29.2024         Ziad Mohammed       Ticket 1.
+    --------------      --------------      --------------
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+*/
+

@@ -1,0 +1,31 @@
+/**
+--------------------------------------------------------
+--------------------------------------------------------
+ * @name    : SCB_prog.c
+ * @author  : Ziad Mohammed Fathy.
+ * @date    : Sep.29.2024
+ * @version :   _v1_
+ * @brief   :
+--------------------------------------------------------
+--------------------------------------------------------
+ */
+
+#include "03_Mcal/Core_CortexM3/SCB/SCB_init.h"
+
+
+//void MSCB_vSetGroupPriority(SCB_GROUPPRIORITIES_t copyGroupPriority)
+//{
+//	copyGroupPriority = ((uint32_t)copyGroupPriority & 0x07);
+//	uint32_t RegValue = SCB->AIRCR;
+//
+//	RegValue &= ~(SCB_GROUP_PRIORTY_MSK | SCB_VECTKEY_MSK);
+//
+//	RegValue = (RegValue | (VECTKEY_STATUSE << SCB_VECTKEY_POS) | (copyGroupPriority << SCB_GROUP_PRIORTY_POS));
+//	SCB->AIRCR = RegValue;
+//}
+//
+//uint32_t MSCB_vGetGroupPriority(void)
+//{
+//	uint32_t retValue = (((uint32_t)SCB->AIRCR & SCB_GROUP_PRIORTY_MSK) >> SCB_GROUP_PRIORTY_POS);
+//	return retValue;
+//}

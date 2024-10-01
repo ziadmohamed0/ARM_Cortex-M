@@ -1,0 +1,32 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Ziad Mohammed Fathy
+ * @date    	   : Sep.29.2024
+ * @version 	   : _v1_
+ * @brief          : Main program body
+ ******************************************************************************
+ */
+
+#include "03_Mcal/STM32F103/RCC/RCC_init.h"
+
+uint32_t var1 = 0;
+uint32_t var2 = 0;
+
+int main(void) {
+	MNVIC_vEnableIRQ(EXTI4_IRQn);
+	MNVIC_vEnableIRQ(I2C1_ER_IRQn);
+
+//	MNVIC_vSetPendingIRQ(EXTI4_IRQn);
+//	MNVIC_vSetPendingIRQ(I2C1_ER_IRQn);
+//
+//	MNVIC_vClearPendingIRQ(EXTI4_IRQn);
+//	MNVIC_vClearPendingIRQ(I2C1_ER_IRQn);
+
+	MNVIC_vDisableIRQ(EXTI4_IRQn);
+	MNVIC_vDisableIRQ(I2C1_ER_IRQn);
+
+	while(1) {
+//    	MRCC_vClockEnable(AHB, 1);
+    }
+}

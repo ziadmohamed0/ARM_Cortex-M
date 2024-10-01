@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "cortexm3_core_nvic.h": "c"
+    }
+}

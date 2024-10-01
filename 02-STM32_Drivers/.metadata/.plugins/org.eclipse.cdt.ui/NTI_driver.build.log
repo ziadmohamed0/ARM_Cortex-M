@@ -1,0 +1,10 @@
+01:28:10 **** Incremental Build of configuration Debug for project NTI_driver ****
+make -j4 all 
+arm-none-eabi-size   NTI_driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    640	      8	   1568	   2216	    8a8	NTI_driver.elf
+Finished building: default.size.stdout
+ 
+
+01:28:11 Build Finished. 0 errors, 0 warnings. (took 738ms)
+
