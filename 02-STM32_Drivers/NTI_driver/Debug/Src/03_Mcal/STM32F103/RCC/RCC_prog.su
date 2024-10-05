@@ -1,2 +1,0 @@
-../Src/03_Mcal/STM32F103/RCC/RCC_prog.c:21:6:MRCC_vClockEnable	16	static
-../Src/03_Mcal/STM32F103/RCC/RCC_prog.c:36:6:MRCC_vClockDisable	16	static

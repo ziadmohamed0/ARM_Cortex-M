@@ -1,22 +1,14 @@
-01:28:04 **** Incremental Build of configuration Debug for project NTI_driver ****
+14:16:50 **** Incremental Build of configuration Debug for project STM32F401CCU6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/03_Mcal/STM32F103/RCC/RCC_prog.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/03_Mcal/STM32F103/RCC/RCC_prog.d" -MT"Src/03_Mcal/STM32F103/RCC/RCC_prog.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/03_Mcal/STM32F103/RCC/RCC_prog.o"
-arm-none-eabi-gcc "../Src/01_App/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/01_App/main.d" -MT"Src/01_App/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/01_App/main.o"
-arm-none-eabi-gcc -o "NTI_driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/ARM/02-STM32_Drivers/NTI_driver/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NTI_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: NTI_driver.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32F401CCU6.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/ziad/ARM/02-STM32_Drivers/STM32F401CCU6/STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F401CCU6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F401CCU6.elf
  
-arm-none-eabi-size   NTI_driver.elf 
-arm-none-eabi-objdump -h -S  NTI_driver.elf  > "NTI_driver.list"
+arm-none-eabi-size   STM32F401CCU6.elf 
    text	   data	    bss	    dec	    hex	filename
-    640	      8	   1568	   2216	    8a8	NTI_driver.elf
+   5828	     20	   1572	   7420	   1cfc	STM32F401CCU6.elf
+arm-none-eabi-objdump -h -S  STM32F401CCU6.elf  > "STM32F401CCU6.list"
 Finished building: default.size.stdout
  
-Finished building: NTI_driver.list
- 
-01:28:10 **** Incremental Build of configuration Debug for project NTI_driver ****
-make -j4 all 
-arm-none-eabi-size   NTI_driver.elf 
-   text	   data	    bss	    dec	    hex	filename
-    640	      8	   1568	   2216	    8a8	NTI_driver.elf
-Finished building: default.size.stdout
+Finished building: STM32F401CCU6.list
  

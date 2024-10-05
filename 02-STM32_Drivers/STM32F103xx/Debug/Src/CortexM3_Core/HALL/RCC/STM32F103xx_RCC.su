@@ -1,2 +1,0 @@
-../Src/CortexM3_Core/HALL/RCC/STM32F103xx_RCC.c:11:10:RCC_oscConfig	24	static
-../Src/CortexM3_Core/HALL/RCC/STM32F103xx_RCC.c:78:10:RCC_sysCLKConfig	24	static

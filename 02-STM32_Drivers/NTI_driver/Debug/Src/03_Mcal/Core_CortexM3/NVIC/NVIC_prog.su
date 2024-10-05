@@ -1,7 +1,0 @@
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:19:6:MNVIC_vEnableIRQ	16	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:36:6:MNVIC_vDisableIRQ	16	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:53:6:MNVIC_vSetPendingIRQ	16	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:70:6:MNVIC_vClearPendingIRQ	16	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:87:10:MNVIC_u32GetPendingIRQ	24	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:107:6:MNVIC_vSetPriority	16	static
-../Src/03_Mcal/Core_CortexM3/NVIC/NVIC_prog.c:116:10:MNVIC_u32GetPriority	16	static

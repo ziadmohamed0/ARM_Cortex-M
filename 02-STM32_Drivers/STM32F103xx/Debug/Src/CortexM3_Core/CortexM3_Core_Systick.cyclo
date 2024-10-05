@@ -1,8 +1,0 @@
-CortexM3_Core_Systick.c:14:10:Systick_init	2
-CortexM3_Core_Systick.c:40:6:Systick_deInit	1
-CortexM3_Core_Systick.c:48:6:Systick_waitBlocking	2
-CortexM3_Core_Systick.c:58:6:Systick_singleInterval	2
-CortexM3_Core_Systick.c:72:6:Systick_periodicInterval	2
-CortexM3_Core_Systick.c:86:10:Systick_getRemainingTicks	1
-CortexM3_Core_Systick.c:93:10:Systick_getElapsedTicks	1
-CortexM3_Core_Systick.c:100:6:SysTick_Handler	3

@@ -1,2 +1,0 @@
-../Src/03_Mcal/Core_CortexM3/SCB/SCB_prog.c:16:6:MSCB_vSetGroupPriority	16	static
-../Src/03_Mcal/Core_CortexM3/SCB/SCB_prog.c:21:10:MSCB_vGetGroupPriority	16	static

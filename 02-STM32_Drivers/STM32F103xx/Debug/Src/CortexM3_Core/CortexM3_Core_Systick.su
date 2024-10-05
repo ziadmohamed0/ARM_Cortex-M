@@ -1,8 +1,0 @@
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:14:10:Systick_init	24	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:40:6:Systick_deInit	4	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:48:6:Systick_waitBlocking	16	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:58:6:Systick_singleInterval	16	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:72:6:Systick_periodicInterval	16	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:86:10:Systick_getRemainingTicks	16	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:93:10:Systick_getElapsedTicks	16	static
-../Src/CortexM3_Core/CortexM3_Core_Systick.c:100:6:SysTick_Handler	8	static

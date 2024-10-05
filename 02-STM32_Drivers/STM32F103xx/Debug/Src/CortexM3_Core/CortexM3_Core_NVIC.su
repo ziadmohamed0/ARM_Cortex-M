@@ -1,7 +1,0 @@
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:11:6:NVIC_setEnableIQRn	16	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:35:6:NVIC_setDisableIQRn	16	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:59:6:NVIC_setPendingIQRn	16	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:83:6:NVIC_clearPendingIQRn	16	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:107:10:NVIC_getActiveIQRn	24	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:141:6:NVIC_setPriorityIQRn	16	static
-../Src/CortexM3_Core/CortexM3_Core_NVIC.c:153:10:NVIC_getPriorityIQRn	24	static
