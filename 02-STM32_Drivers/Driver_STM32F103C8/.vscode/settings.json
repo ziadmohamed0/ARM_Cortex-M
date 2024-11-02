@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "exti_interface.h": "c",
-        "rcc_interface.h": "c",
-        "bit_math.h": "c"
-    }
-}
